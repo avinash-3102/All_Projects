@@ -1,0 +1,53 @@
+<script language="JavaScript">
+    var a;
+    var b;
+    var c;
+    var d;
+    var e;
+    var result=0; 
+    var avg=0; 
+    
+    function Calculate()
+    {
+     a=parseInt(form1.txtNum1.value);
+     b=parseInt(form1.txtNum2.value);
+     c=parseInt(form1.txtNum3.value);
+     d=parseInt(form1.txtNum4.value);
+     e=parseInt(form1.txtNum5.value);
+     result=a+b+c+d+e;
+     avg = result/5;
+    
+    document.write("The Total is  :"+ "<b>" + result  +  "<b>" + "</br>");
+    
+    document.write("The Avg is  :"+ "<b>" + avg  +  "<b>" + "</br>");
+    
+    if(avg > 55)
+    {
+        document.write("The Grade is  :"+ "<b>" + "Pass"  +  "<b>" );
+    
+    }
+    else
+    {
+        document.write("The Grade is  :"+ "<b>" + "Fail"  +  "<b>" );
+    }
+    }
+    </script>
+    
+    <html>
+    <head></head>
+    <body>
+        <h2>Student marks</h2> 
+    <form name="form1">
+    <b>Enter Marks 1:</b><INPUT type="textbox" name="txtNum1"> </br>
+    <b>Enter Marks 2:</b><INPUT type="textbox" name="txtNum2"> </br>
+    <b>Enter Marks 3:</b><INPUT type="textbox" name="txtNum3"> </br>
+    <b>Enter Marks 4:</b><INPUT type="textbox" name="txtNum4"> </br>
+    <b>Enter Marks 5:</b><INPUT type="textbox" name="txtNum5"> </br>
+       
+    <INPUT type="button" Value="Calculate" onClick='Calculate()'>
+    </form>
+    <form name="form2">
+    <INPUT type="button" Value="Reset" onClick='Reset()'>
+    </form>
+    </body>
+    </html>
